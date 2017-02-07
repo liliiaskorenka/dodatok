@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<link rel="stylesheet" href="29-11-2016.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="menu">
+				<ul class="menu_list">
+					<li class="menu_item"><a class="menu_link" href="#">Item1</a></li>
+					<li class="menu_item"><a class="menu_link" href="#">Item2</a></li>
+					<li class="menu_item"><a class="menu_link" href="#">Item3</a></li>
+					<li class="menu_item"><a class="menu_link" href="#">Item4</a></li>
+					<li class="menu_item"><a class="menu_link" href="#">Item5</a></li>
+				</ul>
+			</nav>
+		</header>
+		<aside class="sidebar"></aside>
+		<main class="content">
+			<form action="#" oninput="x.value=parseInt(level.value)">
+				
+				<h1 class="Register">Register for Miss Bakers Space Cadets</h1>
+				
+				<section class="details">
+				<h2 >Personal details</h2>
+
+				First Name <br>
+				<input class="inputred" type="text" name="First Name" placeholder="First name only" autofocus required><br>
+
+				Last Name <br>
+				<input class="inputred" type="text" name="Last Name" placeholder="Last name only" required><br>
+				
+				Date of Birth <br>
+				<input class="inputred" type="date" name="Date of Birth" required><br>
+				
+				Email <br>
+				<input class="inputred" type="email" name="Email" placeholder="example@domain.com" required><br>
+				
+				URL <br>
+				<input class="inputgreen" type="url" name="URL" placeholder="http://mysite.com"><br>
+				
+				Telephone <br>
+				<input class="inputred" type="tel" name="Telephone" placeholder="Eg +447000 000000" required><br>
+				
+				Shoesize <br>
+				<input class="inputgreen" type="number" name="Shoesize" placeholder="9" step="0.5"><br>
+				
+				Flying Skill level (1 low - 100 high) <br>
+				<input class="inputgreen" type="range" name="Flying Skill level" min="1" max="100" id="level"><br>
+				<output name="x" for="level"></output>
+				</section>
+				
+				<section class="details">
+				<h2 >Billing address</h2>
+				
+				Address <br>
+				<textarea class="inputred" name="Address" rows="10" cols="30"></textarea><br>
+				
+				Post code <br>
+				<input class="inputred" type="text" name="Post code" required><br>
+				
+				Country <br>
+				<input class="inputgreen" list="Countries" name="Country" required><br>
+				<datalist id="Countries">
+					<option value="England">England</option>
+					<option value="Northern Ireland">Northern Ireland</option>
+					<option value="Ireland">Ireland</option>
+					<option value="Scotland">Scotland</option>
+					<option value="Wales">Wales</option>
+				</datalist>
+				</section>
+				
+				<section class="details">
+				<h2 >Card details</h2>
+				
+				Card type <br>
+				<input class="inputgreen" type="radio" name="Card type" id="VISA">
+				<label for="VISA">VISA</label>
+				<input class="inputgreen" type="radio" name="Card type" id="Mastercard">
+				<label for="Mastercard">Mastercard</label>
+				<input class="inputgreen" type="radio" name="Card type" id="AMEX">
+				<label for="AMEX">AMEX</label><br>
+				
+				Name <br>
+				<input class="inputred" type="text" name="Name" placeholder="Name as it appears on you" required><br>
+				
+				Card number <br>
+				<input class="inputgreen" type="number" name="Card number" step="1" title="The sixteen digit number across the middle of your card."><br>
+				
+				Security code <br>
+				<input class="inputgreen" type="number" name="Security code" step="1" title="The last three digits on the back of your card."><br>
+				
+				Expiry Date <br>
+				<input class="inputgreen" type="month" name="Expiry Date"><br>
+				</section>
+
+				<section class="details_submit">
+				<input type="submit" value="Place holder">
+				</section>
+			</form>
+		</main>
+	</div>
+	<footer class="footer"></footer>
+
+</body>
+</html>

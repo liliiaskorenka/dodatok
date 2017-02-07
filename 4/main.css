@@ -1,0 +1,41 @@
+.scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.gallery {
+  display: inline-block !important;
+  white-space: nowrap;
+}
+.photos {
+  width: 300px;
+}
+.galleryphoto {
+  display: inline-block;
+  width: 300px;
+  white-space: normal;
+  vertical-align: top;
+  padding-top: 20px;
+}
+.textingallery {
+  height: 40px;
+}
+.galleryphoto1 {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  width: 295px;
+  padding-top: 25px;
+}
+.SaveCansel {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+.TableInPanel {
+  padding: 0;
+}
+.list-group-item {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+}
